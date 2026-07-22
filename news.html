@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stereo Lyric</title>
+
+    <!-- Bootstrap (para que funcione el menú desplegable) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <style>
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.fade-in{
+    opacity:0;
+    animation:fadeIn 1.8s ease forwards;
+}
+</style>
+</head>
+
+<body style="margin:0;">
+
+<!-- PEGA AQUÍ TU CÓDIGO -->
+<div class="position-relative"
+     style="
+        width:100%;
+        min-height:100vh;
+        background:url(https://imgur.com/uAUV1a8.png);
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+     ">
+
+
+    <!-- Franja superior -->
+
+<div style="height:90px; display:flex; align-items:center;">
+    <!-- Logo -->
+    <div style="padding-left:20px;">
+    <a href="index.html">
+        <img src="https://imgur.com/w61JLkg.png" style="width:80px;">
+    </a>
+    </div>
+
+    <!-- Menú -->
+    <div style="margin-left:auto; padding-right:25px;">
+
+        <a href="news.html"
+            style="color:#fff; text-decoration:none; margin:0 12px; font-weight:bold; text-transform:uppercase;">
+            News
+        </a>
+
+        <a href="introduction.html"
+            style="color:#fff; text-decoration:none; margin:0 12px; font-weight:bold; text-transform:uppercase;">
+            Introduction
+        </a>
+
+        <a href="story.html"
+            style="color:#fff; text-decoration:none; margin:0 12px; font-weight:bold; text-transform:uppercase;">
+            Story
+        </a>
+
+        <a href="character.html"
+            style="color:#fff; text-decoration:none; margin:0 12px; font-weight:bold; text-transform:uppercase;">
+            Character
+        </a>
+
+        <!-- Menú desplegable -->
+        <div class="dropdown d-inline-block">
+
+            <a class="dropdown-toggle"
+               data-toggle="dropdown"
+               href="#"
+               style="color:#fff; text-decoration:none; margin-left:12px; font-weight:bold; text-transform:uppercase;">
+                Official SNS
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right">
+
+                <a class="dropdown-item"
+                   href="https://x.com/Stereolyr">
+                    Twitter
+                </a>
+
+                <a class="dropdown-item"
+                   href="https://www.youtube.com/@L.y.r.r">
+                    YouTube
+                </a>
+
+                <a class="dropdown-item"
+                   href="https://www.instagram.com/stereolyric/">
+                    Instagram
+                </a>
+                
+                <a class="dropdown-item"
+                   href="https://www.instagram.com/l.y.r.r.r/">
+                    L.y.r.i.c
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+<!-- Banner -->
+<div style="min-height:560px; display:flex; flex-direction:column;">
+
+    <!-- Contenido -->
+    <div class="fade-in" style="flex:1; display:flex;">
+
+        <!-- Columna izquierda -->
+        <div style="
+            width:35%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        ">
+            <img src="https://imgur.com/w61JLkg.png" style="width:260px;">
+        </div>
+
+        <!-- Columna derecha -->
+        <div style="
+            width:65%;
+            color:white;
+            padding:40px;
+        ">
+
+            <!-- Botones -->
+            <ul class="nav border-0 mb-4">
+
+                <li class="nav-item mr-4">
+                    <a class="nav-link active"
+           data-toggle="tab"
+           href="#all"
+           style="color:white; padding:0; text-transform:uppercase;">
+            ALL
+                    </a>
+                </li>
+
+                <li class="nav-item mr-4">
+                    <a class="nav-link"
+           data-toggle="tab"
+           href="#chapter"
+           style="color:white; padding:0; text-transform:uppercase;">
+            CHAPTERS
+                    </a>
+                </li>
+
+                <li class="nav-item mr-4">
+                    <a class="nav-link"
+           data-toggle="tab"
+           href="#collabo"
+           style="color:white; padding:0; text-transform:uppercase;">
+            COLLABO
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+           data-toggle="tab"
+           href="#update"
+           style="color:white; padding:0; text-transform:uppercase;">
+            UPDATES
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content">
+
+                <!-- ALL -->
+                <div class="tab-pane fade show active" id="all">
+                  
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/05/17</span>
+
+                        <a href="https://x.com/Stereolyr/status/2056053004751589401?s=20"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            HAPPY BITHDAY, KANATA!
+                        </a>
+                    </div>
+                  
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/04/13</span>
+
+                        <a href="https://toyhou.se/38492459.kajiwara-niji"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Niji Kajiwara's Wikihouse is complete!
+                        </a>
+                    </div>
+                  
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/04/12</span>
+
+                        <a href="https://toyhou.se/38492801.nakajima-yuto"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Yuto Nakajima's Wikihouse is complete!
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/03/27</span>
+
+                        <a href="https://toyhou.se/38295076.hayashi-ren"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Ren Hayashi's Wikihouse is complete!
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/03/1</span>
+
+                        <a href="https://x.com/Stereolyr/status/2028231848921317772?s=20"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            HAPPY BIRTHDAY, RYO!
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/01/4</span>
+
+                        <a href="https://x.com/NAKAjiwaraI"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Kajiwara Niji - X
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/01/4</span>
+
+                        <a href="https://x.com/NAKanataI"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Kanata Imase - X
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/01/4</span>
+
+                        <a href="https://x.com/NAKhayashI"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Hayashi Ren - X
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/01/4</span>
+
+                        <a href="https://x.com/NAKAizawaI"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Aizawa Ryo - X
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/01/4</span>
+
+                        <a href="https://x.com/NAKajimayutoI"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Nakamura Yuto - X
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- CHAPTERS -->
+                <div class="tab-pane fade" id="chapter">
+
+                    <span style="display:inline-block;width:120px;color:#8d8d8d;"></span>
+
+                    <a href="LINK_HERE"
+                       style="color:#fff;font-weight:bold;text-decoration:none;">
+                        
+                    </a>
+
+                </div>
+
+                <!-- COLLABO -->
+                <div class="tab-pane fade" id="collabo">
+
+                    <span style="display:inline-block;width:120px;color:#8d8d8d;"></span>
+
+                    <a href="LINK_HERE"
+                       style="color:#fff;font-weight:bold;text-decoration:none;">
+                        
+                    </a>
+
+                </div>
+
+                <!-- UPDATE -->
+                <div class="tab-pane fade" id="update">
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/05/17</span>
+
+                        <a href="https://x.com/Stereolyr/status/2056053004751589401?s=20"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            HAPPY BITHDAY, KANATA!
+                        </a>
+                    </div>
+                  
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/04/13</span>
+
+                        <a href="https://toyhou.se/38492459.kajiwara-niji"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Niji Kajiwara's Wikihouse is complete!
+                        </a>
+                    </div>
+                  
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/04/12</span>
+
+                        <a href="https://toyhou.se/38492801.nakajima-yuto"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Yuto Nakajima's Wikihouse is complete!
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/03/27</span>
+
+                        <a href="https://toyhou.se/38295076.hayashi-ren"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Ren Hayashi's Wikihouse is complete!
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/03/1</span>
+
+                        <a href="https://x.com/Stereolyr/status/2028231848921317772?s=20"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            HAPPY BIRTHDAY, RYO!
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/01/4</span>
+
+                        <a href="https://x.com/NAKAjiwaraI"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Kajiwara Niji - X
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/01/4</span>
+
+                        <a href="https://x.com/NAKanataI"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Kanata Imase - X
+                        </a>
+                    </div>
+                    
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/01/4</span>
+
+                        <a href="https://x.com/NAKhayashI"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Hayashi Ren - X
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/01/4</span>
+
+                        <a href="https://x.com/NAKAizawaI"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Aizawa Ryo - X
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom:22px;">
+                        <span style="display:inline-block;width:120px;color:#8d8d8d;">2026/01/4</span>
+
+                        <a href="https://x.com/NAKajimayutoI"
+                           style="color:#fff;font-weight:bold;text-decoration:none;">
+                            Nakamura Yuto - X
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Barra inferior -->
+    <div style="
+        height:40px;
+        background:#000;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:0 20px;
+    ">
+
+        <a href="https://avex.com/jp/ja/public/privacy/"
+           style="color:#cfcfcf;text-decoration:none;font-size:11px;text-transform:uppercase;">
+            PRIVACY POLICY
+        </a>
+
+        <span style="color:#cfcfcf;font-size:11px;">
+            ©Stereo Lyric2026
+        </span>
+
+    </div>
+</div>
