@@ -115,7 +115,11 @@
 
     </div>
 <!-- Banner -->
-<div style="min-height:560px; display:flex; flex-direction:column;">
+<div style="
+flex:1;
+display:flex;
+flex-direction:column;
+">
 
     <!-- Contenido -->
     <div class="fade-in" style="flex:1; display:flex;">
@@ -199,7 +203,6 @@ padding:70px 60px 0 20px;
         <a href="news.html"
            style="
                 color:#fff;
-                font-weight:800;
                 text-decoration:none;
                 text-transform:uppercase;
                 font-size:18px;
@@ -213,13 +216,17 @@ padding:70px 60px 0 20px;
 </div>
     <!-- Barra inferior -->
     <div style="
-        height:40px;
-        background:#000;
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        padding:0 20px;
-    ">
+height:40px;
+background:#000;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:0 20px;
+
+flex-shrink:0;
+">
 
         <a href="https://avex.com/jp/ja/public/privacy/"
            style="color:#cfcfcf;text-decoration:none;font-size:11px;text-transform:uppercase;">
