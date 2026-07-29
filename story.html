@@ -383,7 +383,8 @@ ine-height:2;
     <!-- Visual -->
     <div style="text-align:center;">
 
-        <a href="#"
+       <a href="javascript:void(0)"
+   onclick="abrirRelation()"
            style="
                 width:125px;
                 height:125px;
@@ -553,6 +554,46 @@ Niji se sienta en el futón, y Ryo le pregunta si tiene pensado unirse a un club
 </div>
 
 <!-- ===================== FIN POPUP ===================== -->
+
+<!-- POPUP RELACIONES -->
+<div id="popupRelation" style="
+    display:none;
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.88);
+
+    z-index:9999;
+
+    justify-content:center;
+    align-items:center;
+">
+
+    <!-- Botón cerrar -->
+    <span onclick="cerrarRelation()"
+          style="
+            position:absolute;
+            top:25px;
+            right:35px;
+
+            color:white;
+            font-size:42px;
+            cursor:pointer;
+            font-weight:bold;
+          ">
+        ✕
+    </span>
+
+    <!-- Imagen -->
+    <img src="https://imgur.com/8jHWotu.png"
+         style="
+            max-width:90%;
+            max-height:90%;
+         ">
+
+</div>
+    
 <!-- Barra inferior -->
 <div style="
     height:40px;
@@ -574,3 +615,27 @@ Niji se sienta en el futón, y Ryo le pregunta si tiene pensado unirse a un club
 
     </div>
 </div>
+
+<script>
+function abrirPopup(){
+    document.getElementById("popupLeer").style.display="flex";
+}
+
+function cerrarPopup(){
+    document.getElementById("popupLeer").style.display="none";
+}
+
+function abrirRelation(){
+    document.getElementById("popupRelation").style.display="flex";
+}
+
+function cerrarRelation(){
+    document.getElementById("popupRelation").style.display="none";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
