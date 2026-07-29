@@ -411,7 +411,8 @@ ine-height:2;
     <!-- Keyword -->
     <div style="text-align:center;">
 
-        <a href="#"
+       <a href="javascript:void(0)"
+   onclick="abrirKeyword()"
            style="
                 width:125px;
                 height:125px;
@@ -554,7 +555,75 @@ Niji se sienta en el futón, y Ryo le pregunta si tiene pensado unirse a un club
 </div>
 
 <!-- ===================== FIN POPUP ===================== -->
+<!-- POPUP KEYWORD -->
+<div id="popupKeyword" style="
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.88);
+    z-index:9999;
+    justify-content:center;
+    align-items:center;
+">
 
+    <span onclick="cerrarKeyword()"
+          style="
+            position:absolute;
+            top:25px;
+            right:35px;
+            color:white;
+            font-size:42px;
+            cursor:pointer;
+            font-weight:bold;
+          ">
+        ✕
+    </span>
+
+    <div style="
+        width:900px;
+        max-width:90%;
+        max-height:85vh;
+        overflow-y:auto;
+
+        background:#111;
+        border:1px solid rgba(255,255,255,.25);
+
+        padding:40px;
+        color:white;
+    ">
+
+        <div style="
+            font-size:42px;
+            font-weight:700;
+            margin-bottom:30px;
+            letter-spacing:2px;
+        ">
+            KEYWORD
+        </div>
+
+        <div style="
+            color:#62d7ff;
+            font-size:22px;
+            margin-bottom:10px;
+        ">
+            Season 1
+        </div>
+
+        <div style="
+            font-size:30px;
+            margin-bottom:20px;
+        ">
+            Opening Show
+        </div>
+
+        <p style="line-height:2;">
+            Aquí irá la explicación de la temporada, información adicional,
+            curiosidades o cualquier texto que quieras mostrar.
+        </p>
+
+    </div>
+
+</div>
 <!-- POPUP RELACIONES -->
 <div id="popupRelation" style="
     display:none;
@@ -584,7 +653,112 @@ Niji se sienta en el futón, y Ryo le pregunta si tiene pensado unirse a un club
           ">
         ✕
     </span>
+<!-- POPUP KEYWORD -->
+<div id="popupKeyword" style="
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.88);
+    z-index:9999;
+    justify-content:center;
+    align-items:center;
+">
 
+    <!-- Cerrar -->
+    <span onclick="cerrarKeyword()"
+          style="
+            position:absolute;
+            top:25px;
+            right:35px;
+            color:white;
+            font-size:42px;
+            cursor:pointer;
+            font-weight:bold;
+          ">
+        ✕
+    </span>
+
+    <!-- Caja -->
+    <div style="
+        width:700px;
+        max-width:90%;
+        max-height:85vh;
+        overflow-y:auto;
+
+        background:#111;
+        border:1px solid rgba(255,255,255,.25);
+
+        padding:45px 55px;
+        color:white;
+    ">
+
+        <!-- Título -->
+        <div style="
+            font-size:42px;
+            font-weight:700;
+            letter-spacing:2px;
+            margin-bottom:40px;
+        ">
+            KEYWORD CHECK
+        </div>
+
+        <!-- Season -->
+        <div style="
+            color:#62d7ff;
+            font-size:24px;
+            font-weight:600;
+            margin-bottom:10px;
+        ">
+            [1ST] SEASON
+        </div>
+
+        <p style="
+            font-size:16px;
+            line-height:2;
+            margin-bottom:35px;
+        ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+        </p>
+
+        <!-- Season -->
+        <div style="
+            color:#62d7ff;
+            font-size:24px;
+            font-weight:600;
+            margin-bottom:10px;
+        ">
+            [2ND] SEASON
+        </div>
+
+        <p style="
+            font-size:16px;
+            line-height:2;
+            margin-bottom:35px;
+        ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+        </p>
+
+        <!-- Season -->
+        <div style="
+            color:#62d7ff;
+            font-size:24px;
+            font-weight:600;
+            margin-bottom:10px;
+        ">
+            [3RD] SEASON
+        </div>
+
+        <p style="
+            font-size:16px;
+            line-height:2;
+            margin:0;
+        ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+        </p>
+
+    </div>
+
+</div>
     <!-- Imagen -->
     <img src="https://imgur.com/8jHWotu.png"
          style="
@@ -631,6 +805,13 @@ function abrirRelation(){
 
 function cerrarRelation(){
     document.getElementById("popupRelation").style.display="none";
+}
+    function abrirKeyword(){
+    document.getElementById("popupKeyword").style.display="flex";
+}
+
+function cerrarKeyword(){
+    document.getElementById("popupKeyword").style.display="none";
 }
 </script>
 
