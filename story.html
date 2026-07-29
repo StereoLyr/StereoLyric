@@ -481,26 +481,29 @@ align-items:center;
         <!-- Botón cerrar -->
 
         <button
-        onclick="document.getElementById('popupLeer').style.display='none';"
+onclick="document.getElementById('popupLeer').style.display='none';"
 
-        style="
-            position:absolute;
+onmouseover="this.style.color='#62d7ff';"
+onmouseout="this.style.color='white';"
 
-            right:20px;
-            top:20px;
+style="
+    position:absolute;
+    right:20px;
+    top:20px;
 
-            width:45px;
-            height:45px;
+    width:45px;
+    height:45px;
 
-            border:none;
-            background:none;
+    border:none;
+    background:none;
 
-            font-size:35px;
+    color:white;
 
-            cursor:pointer;
-        ">
-            ×
-        </button>
+    font-size:35px;
+    cursor:pointer;
+">
+    ×
+</button>
 
         <h1 style="
             margin-top:0;
