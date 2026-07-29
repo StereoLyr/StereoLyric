@@ -480,18 +480,20 @@ align-items:center;
         box-sizing:border-box;
     ">
 
-        <!-- Botón cerrar -->
+      <!-- Botón cerrar -->
 
-       <span onclick="cerrarPopup()"
+<span onclick="cerrarPopup()"
       style="
-        position:absolute;
+        position:fixed;
         top:25px;
         right:35px;
-        color:white;
+        color:#fff;
         font-size:42px;
-        cursor:pointer;
         font-weight:bold;
-      ">
+        cursor:pointer;
+        z-index:10000;
+        user-select:none;
+    ">
     ✕
 </span>
 
@@ -543,75 +545,7 @@ Niji se sienta en el futón, y Ryo le pregunta si tiene pensado unirse a un club
 </div>
 
 <!-- ===================== FIN POPUP ===================== -->
-<!-- POPUP KEYWORD -->
-<div id="popupKeyword" style="
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.88);
-    z-index:9999;
-    justify-content:center;
-    align-items:center;
-">
 
-    <span onclick="cerrarKeyword()"
-          style="
-            position:absolute;
-            top:25px;
-            right:35px;
-            color:white;
-            font-size:42px;
-            cursor:pointer;
-            font-weight:bold;
-          ">
-        ✕
-    </span>
-
-    <div style="
-        width:900px;
-        max-width:90%;
-        max-height:85vh;
-        overflow-y:auto;
-
-        background:#111;
-        border:1px solid rgba(255,255,255,.25);
-
-        padding:40px;
-        color:white;
-    ">
-
-        <div style="
-            font-size:42px;
-            font-weight:700;
-            margin-bottom:30px;
-            letter-spacing:2px;
-        ">
-            KEYWORD
-        </div>
-
-        <div style="
-            color:#62d7ff;
-            font-size:22px;
-            margin-bottom:10px;
-        ">
-            Season 1
-        </div>
-
-        <div style="
-            font-size:30px;
-            margin-bottom:20px;
-        ">
-            Opening Show
-        </div>
-
-        <p style="line-height:2;">
-            Aquí irá la explicación de la temporada, información adicional,
-            curiosidades o cualquier texto que quieras mostrar.
-        </p>
-
-    </div>
-
-</div>
 <!-- POPUP RELACIONES -->
 <div id="popupRelation" style="
     display:none;
@@ -641,7 +575,16 @@ Niji se sienta en el futón, y Ryo le pregunta si tiene pensado unirse a un club
           ">
         ✕
     </span>
-<!-- POPUP KEYWORD -->
+    
+    <!-- Imagen -->
+    <img src="https://imgur.com/8jHWotu.png"
+         style="
+            max-width:90%;
+            max-height:90%;
+         ">
+
+</div>
+<!------------ POPUP KEYWORD --------------------->
 <div id="popupKeyword" style="
     display:none;
     position:fixed;
@@ -745,14 +688,6 @@ Niji se sienta en el futón, y Ryo le pregunta si tiene pensado unirse a un club
         </p>
 
     </div>
-
-</div>
-    <!-- Imagen -->
-    <img src="https://imgur.com/8jHWotu.png"
-         style="
-            max-width:90%;
-            max-height:90%;
-         ">
 
 </div>
     
