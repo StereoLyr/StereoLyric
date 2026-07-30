@@ -269,7 +269,7 @@ text-align:center;
 
             <!-- Botón -->
 <button
-onclick="document.getElementById('popupLeer').style.display='flex';"
+onclick="abrirPopup(Cap001);"
 
 style="
     margin-top:10px;
@@ -423,7 +423,7 @@ text-align:center;
 
             <!-- Botón -->
 <button
-onclick="document.getElementById('popupLeer').style.display='flex';"
+onclick="abrirPopup(Cap002);"
 
 style="
     margin-top:10px;
@@ -577,7 +577,7 @@ text-align:center;
 
             <!-- Botón -->
 <button
-onclick="document.getElementById('popupLeer').style.display='flex';"
+onclick="abrirPopup(Cap003);"
 
 style="
     margin-top:10px;
@@ -755,7 +755,7 @@ ine-height:2;
 
     <!-- ===================== POPUP LEER ===================== -->
 
-<div id="popupLeer"
+<div id="Cap001"
 style="
 display:none;
 
@@ -808,35 +808,39 @@ align-items:center;
     ✕
 </span>
 
-        <h1 style="
-            margin-top:0;
-            font-size:40px;
-        ">
-            OPENING SHOW
-        </h1>
+        <h1 id="tituloPopup"
+style="
+    margin-top:0;
+    font-size:40px;
+">
+    OPENING SHOW
+</h1>
 
-        <p style="
-            line-height:2;
-            font-size:17px;
-        ">
+        <p id="textoPopup"
+style="
+    line-height:2;
+    font-size:17px;
+">
             Ahí estaba Ryo, quien estaba sentado en el futón, apoyando sus brazos en la mesa, también a su lado, estaba HARU USAGI (16) un chico tímido de cabello celeste dibujando en un papel a modo de chibi como se vería Niji con el uniforme, al final, KAZUKI YAMAGUCHI (17) le entrega la caja a Niji, quien la abre en la mesa del futón, saca la tapa, luego levanta la parte superior del uniforme y dice que seguro le queda, aunque Haru y Ryo miran confundidos porque era el uniforme masculino, a lo que Kazuki dijo, que fue eso, lo que Kajiwara le pidió. 
 
  
         </p>
 
-        <p style="
-            line-height:2;
-            font-size:17px;
-        ">
+        <p id="textoPopup"
+style="
+    line-height:2;
+    font-size:17px;
+">
             Niji sale de la escena, se va a la habitación de Ryo y luego vuelve, entra y al salir, portando el uniforme escolar masculino, con el pelo que le llega hasta los hombros y atado de una forma no muy femenina, y con su rostro confuso, realmente, le hacía pasar por hombre, pero Niji se veía completamente cómodo, aunque solo Haru le aplaudió. Y cuando Ryo le pregunto si de casualidad no estaba eso no estaba prohibido o no haría confundir a las personas con su nombre, Niji respondió que solo se va a presentar como Kajiwara y ya, además que leyó el reglamento de pie a cabeza y en ningún lado decía que estaba prohibido usar otro uniforme, aunque seguro es porque nadie más raro que ella se le había ocurrido. 
 
 
         </p>
 
-        <p style="
-            line-height:2;
-            font-size:17px;
-        ">
+        <p id="textoPopup"
+style="
+    line-height:2;
+    font-size:17px;
+">
             
 Niji se sienta en el futón, y Ryo le pregunta si tiene pensado unirse a un club, a lo cual Niji respondió que sí, estaba entre el de música… o hundirse en la miseria del club de ocultismo… además, porque le daba curiosidad que hacen en ese tipo de clubes. A lo cual, Haruki, Kazu y Ryo dijeron al mismo tiempo ´´cosas´´ y Kazuki se pregunta si ese club estará abierto, porque recordaba que todos los del año anterior pertenecían a tercero, que posiblemente tendría que crear uno, y Niji respondió que no gracias, preferiría ir a ocultismo o al de manga. 
         </p>
@@ -855,6 +859,111 @@ Niji se sienta en el futón, y Ryo le pregunta si tiene pensado unirse a un club
 
 </div>
 
+        <!-- ===================== POPUP LEER 2===================== -->
+
+<div id="Cap002"
+style="
+display:none;
+
+position:fixed;
+left:0;
+top:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.85);
+
+z-index:9999;
+
+justify-content:center;
+align-items:center;
+">
+
+    <div style="
+        position:relative;
+
+        width:900px;
+        max-width:90%;
+
+        max-height:90vh;
+        overflow-y:auto;
+
+        background:#000;
+        color:#fff;
+
+        padding:60px;
+
+        box-sizing:border-box;
+    ">
+
+      <!-- Botón cerrar -->
+
+<span onclick="cerrarPopup()"
+      style="
+        position:fixed;
+        top:25px;
+        right:35px;
+        color:#fff;
+        font-size:42px;
+        font-weight:bold;
+        cursor:pointer;
+        z-index:10000;
+        user-select:none;
+    ">
+    ✕
+</span>
+
+        <h1 id="tituloPopup"
+style="
+    margin-top:0;
+    font-size:40px;
+">
+    OPENING SHOW
+</h1>
+
+        <p id="textoPopup"
+style="
+    line-height:2;
+    font-size:17px;
+">
+            Ahí estaba o en un pdos porque era el uniforme masculino, a lo que Kazuki dijo, que fue eso, lo que Kajiwara le pidió. 
+
+ 
+        </p>
+
+        <p id="textoPopup"
+style="
+    line-height:2;
+    font-size:17px;
+">
+            Niji santo sa y ya, además que leyó el reglamento de pie a cabeza y en ningún lado decía que estaba prohibido usar otro uniforme, aunque seguro es porque nadie más raro que ella se le había ocurrido. 
+
+
+        </p>
+
+        <p id="textoPopup"
+style="
+    line-height:2;
+    font-size:17px;
+">
+            
+Niji se sienta ea del club de ocultismo… ader uno, y Niji respondió que no gracias, preferiría ir a ocultismo o al de manga. 
+        </p>
+
+        <a href="https://youtube.com"
+           target="_blank"
+
+           style="
+                color:#0095ff;
+                font-size:18px;
+           ">
+            
+        </a>
+
+    </div>
+
+</div>
 <!-- ===================== FIN POPUP ===================== -->
 
 <!-- POPUP RELACIONES -->
@@ -1026,6 +1135,27 @@ Niji se sienta en el futón, y Ryo le pregunta si tiene pensado unirse a un club
 
 <script>
 function abrirPopup(){
+
+    if(capituloActual==1){
+
+        document.getElementById("tituloPopup").innerHTML="OPENING SHOW";
+
+        document.getElementById("textoPopup").innerHTML=`
+            Ahí va todo el texto del capítulo 1...
+        `;
+
+    }
+
+    if(capituloActual==2){
+
+        document.getElementById("tituloPopup").innerHTML="NOMBRE DEL CAPÍTULO 2";
+
+        document.getElementById("textoPopup").innerHTML=`
+            Todo el texto del capítulo 2...
+        `;
+
+    }
+
     document.getElementById("popupLeer").style.display="flex";
 }
 
