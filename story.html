@@ -793,7 +793,7 @@ align-items:center;
 
       <!-- Botón cerrar -->
 
-<span onclick="cerrarPopup('Cap002')
+<span onclick="cerrarPopup('Cap001')"
       style="
         position:fixed;
         top:25px;
@@ -826,7 +826,7 @@ style="
  
         </p>
 
-        <p id="textoPopup"
+        <p
 style="
     line-height:2;
     font-size:17px;
@@ -836,7 +836,7 @@ style="
 
         </p>
 
-        <p id="textoPopup"
+        <p
 style="
     line-height:2;
     font-size:17px;
@@ -899,7 +899,7 @@ align-items:center;
 
       <!-- Botón cerrar -->
 
-<span onclick="cerrarPopup('Cap002')
+<span onclick="cerrarPopup('Cap002')"
       style="
         position:fixed;
         top:25px;
@@ -932,7 +932,7 @@ style="
  
         </p>
 
-        <p id="textoPopup"
+        <p
 style="
     line-height:2;
     font-size:17px;
@@ -942,7 +942,7 @@ style="
 
         </p>
 
-        <p id="textoPopup"
+        <p 
 style="
     line-height:2;
     font-size:17px;
@@ -1168,6 +1168,9 @@ function cerrarKeyword(){
     document.getElementById("cap3").style.display="none";
 
     document.getElementById("cap"+n).style.display="block";
+}
+    window.onload = function(){
+    mostrarCapitulo(1);
 }
 </script>
 
