@@ -793,7 +793,7 @@ align-items:center;
 
       <!-- Botón cerrar -->
 
-<span onclick="cerrarPopup()"
+<span onclick="cerrarPopup(Cap001)"
       style="
         position:fixed;
         top:25px;
@@ -899,7 +899,7 @@ align-items:center;
 
       <!-- Botón cerrar -->
 
-<span onclick="cerrarPopup()"
+<span onclick="cerrarPopup(Cap002)
       style="
         position:fixed;
         top:25px;
@@ -1134,33 +1134,17 @@ Niji se sienta ea del club de ocultismo… ader uno, y Niji respondió que no gr
 </div>
 
 <script>
-function abrirPopup(){
+function abrirPopup(id){
 
-    if(capituloActual==1){
+    document.getElementById(id).style.display="flex";
 
-        document.getElementById("tituloPopup").innerHTML="OPENING SHOW";
-
-        document.getElementById("textoPopup").innerHTML=`
-            Ahí va todo el texto del capítulo 1...
-        `;
-
-    }
-
-    if(capituloActual==2){
-
-        document.getElementById("tituloPopup").innerHTML="NOMBRE DEL CAPÍTULO 2";
-
-        document.getElementById("textoPopup").innerHTML=`
-            Todo el texto del capítulo 2...
-        `;
-
-    }
-
-    document.getElementById("popupLeer").style.display="flex";
 }
 
-function cerrarPopup(){
-    document.getElementById("popupLeer").style.display="none";
+
+function cerrarPopup(id){
+
+    document.getElementById(id).style.display="none";
+
 }
 
 function abrirRelation(){
