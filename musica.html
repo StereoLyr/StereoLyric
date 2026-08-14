@@ -41,6 +41,92 @@
 .banner:has(.character:hover) .character:hover {
     filter: blur(0);
 }
+        /* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Ocultar menú de PC */
+    .desktop-menu {
+        display: none;
+    }
+
+    /* Banner */
+    .banner {
+        position: relative;
+        width: 100%;
+        flex: 1;
+        min-height: 0;
+        overflow: hidden;
+    }
+
+    /* Fondo */
+    .banner .background {
+        width: auto !important;
+        height: 100% !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    /* Personajes */
+    .character {
+        max-width: none;
+    }
+
+    /* Rosado */
+    .character.rosado {
+        left: -5% !important;
+        width: 65% !important;
+    }
+
+    /* Celeste */
+    .character.celeste {
+        left: 12% !important;
+        width: 43% !important;
+    }
+
+    /* Centro */
+    .character.centro {
+        left: 27% !important;
+        width: 57% !important;
+    }
+
+    /* Chica */
+    .character.chica {
+        left: 52% !important;
+        width: 47% !important;
+    }
+
+    /* Rubio */
+    .character.rubio {
+        left: 63% !important;
+        width: 55% !important;
+    }
+
+    /* Letras */
+    .banner .letters {
+        width: auto !important;
+        height: 100% !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    /* Footer */
+    .footer {
+        height: 40px;
+        min-height: 40px;
+        padding: 0 10px !important;
+    }
+
+    .footer a,
+    .footer span {
+        font-size: 9px !important;
+    }
+
+}
 </style>
 
 
@@ -144,7 +230,8 @@
     overflow:hidden;
 ">
  <!-- Fondo -->
-<img src="https://i.imgur.com/Qb9OsEX.png"
+<img class="background"
+     src="https://i.imgur.com/Qb9OsEX.png"
      style="
         position:absolute;
         left:54%;
@@ -156,7 +243,7 @@
      ">
 
 <!-- ROSADO -->
-<img class="character"
+<img class="character rosado"
      src="https://imgur.com/VoFd6Mu.png"
      style="
         position:absolute;
@@ -168,7 +255,7 @@
      ">
 
 <!-- RUBIO -->
-<img class="character"
+<img class="character rubio"
      src="https://imgur.com/N7qLLqO.png"
      style="
         position:absolute;
@@ -180,7 +267,7 @@
      ">
 
 <!-- CELESTE -->
-<img class="character"
+<img class="character celeste"
      src="https://imgur.com/t2W41aQ.png"
      style="
         position:absolute;
@@ -192,7 +279,7 @@
      ">
 
 <!-- CENTRO -->
-<img class="character"
+<img class="character centro"
      src="https://imgur.com/csnWIvz.png"
      style="
         position:absolute;
@@ -204,7 +291,7 @@
      ">
 
 <!-- CHICA -->
-<img class="character"
+<img class="character chica"
      src="https://imgur.com/pQbgb7K.png"
      style="
         position:absolute;
@@ -216,7 +303,8 @@
      ">
 
     <!-- Letras flotantes -->
-<img src="https://i.imgur.com/w0wlvEb.png"
+<img class="letters"
+     src="https://i.imgur.com/w0wlvEb.png"
      style="
         position:absolute;
         left:50%;
