@@ -25,7 +25,20 @@
     opacity:0;
     animation:fadeIn 1.8s ease forwards;
 }
-        
+
+        .character {
+    transition: filter .35s ease, opacity .35s ease;
+}
+
+.banner:hover .character {
+    filter: blur(4px);
+    opacity:.65;
+}
+
+.banner .character:hover {
+    filter:none;
+    opacity:1;
+}
 </style>
 
 
@@ -140,7 +153,8 @@
      ">
 
 <!-- ROSADO -->
-<img src="https://i.imgur.com/quvzJei.png"
+<img class="character"
+     src="https://i.imgur.com/quvzJei.png"
      style="
         position:absolute;
         left:2%;
@@ -162,7 +176,8 @@
      ">
 
 <!-- CELESTE -->
-<img src="https://i.imgur.com/KjSQult.png"
+<img class="character"
+     src="https://i.imgur.com/KjSQult.png"
      style="
         position:absolute;
         left:2%;
@@ -173,7 +188,8 @@
      ">
 
 <!-- CENTRO -->
-<img src="https://i.imgur.com/WbHUp9B.png"
+<img class="character"
+     src="https://i.imgur.com/WbHUp9B.png"
      style="
         position:absolute;
         left:2%;
@@ -184,16 +200,16 @@
      ">
 
 <!-- CHICA -->
-<img src="https://i.imgur.com/jKHSF8C.png"
+<img class="character"
+     src="https://i.imgur.com/jKHSF8C.png"
      style="
         position:absolute;
         left:2%;
         bottom:0;
         width:100%;
         height:auto;
-        z-index:6;
+        z-index:7;
      ">
-</div>
 
     <!-- Letras flotantes -->
 <img src="https://i.imgur.com/w0wlvEb.png"
