@@ -26,18 +26,16 @@
     animation:fadeIn 1.8s ease forwards;
 }
 
-        .character {
-    transition: filter .35s ease, opacity .35s ease;
+.character {
+    transition: filter .35s ease;
 }
 
 .banner:hover .character {
-    filter: blur(4px);
-    opacity:.65;
+    filter: blur(6px);
 }
 
 .banner .character:hover {
-    filter:none;
-    opacity:1;
+    filter: blur(0);
 }
 </style>
 
@@ -161,18 +159,19 @@
         bottom:0;
         width:40%;
         height:auto;
-        z-index:2;
+        z-index:3;
      ">
 
 <!-- RUBIO -->
-<img src="https://imgur.com/PwTIz1Z.png"
+<img class="character"
+     src="https://imgur.com/PwTIz1Z.png"
      style="
         position:absolute;
         left:55%;
         bottom:0%;
         width:25%;
         height:auto;
-        z-index:3;
+        z-index:4;
      ">
 
 <!-- CELESTE -->
@@ -184,7 +183,7 @@
         bottom:0;
         width:10%;
         height:auto;
-        z-index:4;
+        z-index:5;
      ">
 
 <!-- CENTRO -->
@@ -196,7 +195,7 @@
         bottom:0;
         width:25%;
         height:auto;
-        z-index:5;
+        z-index:6;
      ">
 
 <!-- CHICA -->
@@ -220,7 +219,7 @@
         transform:translate(-50%,-50%);
         width:100%;
         height:auto;
-        z-index:7;
+        z-index:2;
         pointer-events:none;
      ">
     <!-- Barra inferior -->
