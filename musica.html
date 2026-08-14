@@ -30,11 +30,15 @@
     transition: filter .35s ease;
 }
 
-.banner:hover .character {
+.character:hover {
+    filter: blur(0);
+}
+
+.banner:has(.character:hover) .character {
     filter: blur(6px);
 }
 
-.banner .character:hover {
+.banner:has(.character:hover) .character:hover {
     filter: blur(0);
 }
 </style>
