@@ -183,6 +183,99 @@
     color:#000;
     border-color:#fff;
 }
+        /* =========================
+   PANEL DERECHO
+========================= */
+
+.music-panel {
+    position:absolute;
+
+    right:3%;
+    top:8%;
+
+    width:300px;
+    min-height:500px;
+
+    background:#000;
+
+    padding:25px 22px;
+
+    z-index:20;
+
+    box-sizing:border-box;
+}
+
+/* Logo */
+
+.panel-logo {
+    width:100%;
+    height:150px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+}
+
+.panel-logo img {
+    width:100%;
+    height:auto;
+}
+
+/* Nombre de la banda */
+
+.panel-title {
+    color:#fff;
+
+    text-align:center;
+
+    font-size:22px;
+    font-weight:bold;
+
+    margin:5px 0 20px;
+
+    text-transform:none;
+}
+
+/* Botones de personajes */
+
+.character-links {
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+}
+
+.character-links a {
+    display:flex;
+    align-items:center;
+
+    width:100%;
+    height:40px;
+
+    padding:0 12px;
+
+    box-sizing:border-box;
+
+    background:#202020;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    transition:
+        background .25s ease,
+        color .25s ease;
+}
+
+.character-links a:hover {
+    background:#fff;
+    color:#000;
+
+    text-decoration:none;
+}
 </style>
 
 
@@ -408,6 +501,44 @@
         pointer-events:none;
      ">
     </div>
+
+    <!-- PANEL DE INFORMACIÓN -->
+
+<div class="music-panel">
+
+    <div class="panel-logo">
+        <img src="https://imgur.com/PibsOmE.png">
+    </div>
+
+    <div class="panel-title">
+        Stereo Wave
+    </div>
+
+    <div class="character-links">
+
+        <a href="RyoAizawa.html">
+            Ryo Aizawa
+        </a>
+
+        <a href="NijiKajiwara.html">
+            Niji Kajiwara
+        </a>
+
+        <a href="Renhayashi.html">
+            Ren Hayashi
+        </a>
+
+        <a href="yutonakajima.html">
+            Yuto Nakajima
+        </a>
+
+        <a href="kanataimase.html">
+            Kanata Imase
+        </a>
+
+    </div>
+
+</div>
     <!-- Barra inferior -->
 <div
 style="
