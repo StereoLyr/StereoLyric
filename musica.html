@@ -127,6 +127,62 @@
     }
 
 }
+        /* =========================
+   SELECTOR DE CLUBES
+========================= */
+
+.club-menu {
+    position:absolute;
+    top:18px;
+    left:15%;
+    z-index:20;
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+
+    width:500px;
+}
+
+.club-button {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    height:28px;
+    padding:0 15px;
+
+    border:1px solid rgba(255,255,255,.7);
+    border-radius:18px;
+
+    color:#fff;
+    background:rgba(0,0,0,.25);
+
+    text-decoration:none;
+
+    font-size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease;
+}
+
+.club-button:hover {
+    color:#000;
+    background:#fff;
+    border-color:#fff;
+
+    text-decoration:none;
+}
+
+.club-button.active {
+    background:#fff;
+    color:#000;
+    border-color:#fff;
+}
 </style>
 
 
@@ -221,7 +277,43 @@
     </div>
 
 <!-- Banner -->
+<!-- SELECTOR DE CLUBES -->
 
+<div class="club-menu">
+
+    <a href="musica.html" class="club-button active">
+        MUSICA
+    </a>
+
+    <a href="drama.html" class="club-button">
+        DRAMA
+    </a>
+
+    <a href="arte.html" class="club-button">
+        ARTE
+    </a>
+
+    <a href="ocultismo.html" class="club-button">
+        OCULTISMO
+    </a>
+
+    <a href="cocina.html" class="club-button">
+        COCINA
+    </a>
+
+    <a href="marciales.html" class="club-button">
+        MARCIALES
+    </a>
+
+    <a href="deportes.html" class="club-button">
+        DEPORTES
+    </a>
+
+    <a href="extra.html" class="club-button">
+        EXTRA
+    </a>
+
+</div>
 <div class="banner" style="
     position:relative;
     width:100%;
