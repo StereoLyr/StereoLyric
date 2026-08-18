@@ -518,7 +518,7 @@
      ">
     </div>
 
- <!-- PANEL DE INFORMACIÓN -->
+<!-- PANEL DE INFORMACIÓN -->
 
 <div class="music-panel">
 
@@ -530,7 +530,7 @@
     <!-- Texto japonés -->
     <div style="
         color:#fff;
-        text-align:center;
+        text-align:left;
         font-size:20px;
         letter-spacing:3px;
         margin-top:5px;
@@ -543,23 +543,28 @@
     <div class="character-links">
 
         <a href="RyoAizawa.html">
-            Ryo Aizawa
+            <span>Ryo Aizawa</span>
+            <span>›</span>
         </a>
 
         <a href="NijiKajiwara.html">
-            Niji Kajiwara
+            <span>Niji Kajiwara</span>
+            <span>›</span>
         </a>
 
         <a href="Renhayashi.html">
-            Ren Hayashi
+            <span>Ren Hayashi</span>
+            <span>›</span>
         </a>
 
         <a href="yutonakajima.html">
-            Yuto Nakajima
+            <span>Yuto Nakajima</span>
+            <span>›</span>
         </a>
 
         <a href="kanataimase.html">
-            Kanata Imase
+            <span>Kanata Imase</span>
+            <span>›</span>
         </a>
 
     </div>
@@ -567,7 +572,7 @@
     <!-- Descripción -->
     <div style="
         color:#fff;
-        font-size:15px;
+        font-size:14px;
         line-height:1.7;
         margin-top:22px;
         margin-bottom:20px;
@@ -575,33 +580,84 @@
         Cinco miembros que no saben como se conocieron
     </div>
 
-    <!-- Botones -->
+    <!-- BOTONES -->
     <div style="
         display:flex;
         gap:10px;
+        position:relative;
     ">
 
-        <!-- Profile -->
-        <button
-            onclick="document.getElementById('popupProfile').style.display='flex';"
-            style="
-                flex:1;
-                height:38px;
+        <!-- CONTENEDOR DEL PROFILE -->
+        <div style="
+            flex:1;
+            position:relative;
+        ">
 
-                background:#000;
-                border:1px solid #fff;
+            <!-- POPUP PEQUEÑO -->
+            <div id="popupProfile"
+                 style="
+                    display:none;
+                    position:absolute;
 
-                color:#fff;
+                    width:220px;
+                    height:auto;
 
-                font-size:12px;
-                text-transform:uppercase;
+                    left:50%;
+                    bottom:48px;
 
-                cursor:pointer;
-            ">
-            Profile
-        </button>
+                    transform:translateX(-50%);
 
-        <!-- Playlist -->
+                    background:#000;
+                    border:1px solid #fff;
+
+                    color:#fff;
+
+                    padding:15px;
+
+                    box-sizing:border-box;
+
+                    z-index:100;
+                 ">
+
+                <div style="
+                    font-size:14px;
+                    line-height:1.6;
+                ">
+                    Aquí irá la información general de Stereo Wave,
+                    su historia y formación.
+                </div>
+
+            </div>
+
+            <!-- PROFILE -->
+            <button
+                onclick="
+                    const popup = document.getElementById('popupProfile');
+                    popup.style.display =
+                    popup.style.display === 'block'
+                    ? 'none'
+                    : 'block';
+                "
+                style="
+                    width:100%;
+                    height:38px;
+
+                    background:#000;
+                    border:1px solid #fff;
+
+                    color:#fff;
+
+                    font-size:12px;
+                    text-transform:uppercase;
+
+                    cursor:pointer;
+                ">
+                Profile
+            </button>
+
+        </div>
+
+        <!-- PLAYLIST -->
         <a href="https://youtube.com"
            target="_blank"
            style="
