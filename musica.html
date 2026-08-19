@@ -189,7 +189,7 @@
 .music-panel {
     position:absolute;
 
-    right:40px;
+    left:calc(100% - 380px);
     top:40px;
 
     width:340px;
@@ -280,7 +280,19 @@
 
     text-decoration:none;
 }
-        
+        .scene {
+    position:absolute;
+
+    width:1920px;
+    height:900px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%, -50%);
+
+    transform-origin:center center;
+}
 </style>
 
 
@@ -419,6 +431,7 @@
     min-height:0;
     overflow:hidden;
 ">
+    <div class="scene">
  <!-- Fondo -->
 <img class="background"
      src="https://i.imgur.com/Qb9OsEX.png"
